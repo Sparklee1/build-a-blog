@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<hr>
+{% for b in bodys %}
+<div class = "body">
+  <div class = "blog-title"><a href="/newpost/{{b.key().id()}}">{{b.title}}</a></div>
+  <pre class = "blog-body">{{b.body}}</pre>
+</div>
+{%endfor%}
+{% endblock %}

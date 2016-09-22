@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Erica's Blog</title>
+  </head>
+  <style type="text/css">
+  body {
+    font-family: sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #800080;
+  }
+  .label {
+    text-align: left;
+    display: block;
+    font-size:20px;
+  }
+  .error {color:red;}
+    input[type=text]
+  {
+    width: 800px;
+    font-size: 20px;
+    padding: 2px;
+  }
+  textarea {
+    width: 800px;
+    height: 200px;
+    font-size: 17px;
+    font-family: monospace;
+  }
+  input[type=submit] {
+    font-size: 24px;
+  }
+  hr {
+    margin: 20px auto;
+  }
+  .body + .body {
+    margin-top: 20px;
+  }
+  .blog-title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .body-body {
+    margin: 0;
+    font-size: 17px;
+  }
+  </style>
+  <body>
+    <h1>Erica's Blog</h1>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
